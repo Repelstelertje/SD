@@ -7,11 +7,25 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.+)$ $1.php [QSA]
 
-RewriteRule ^shemale-([0-9a-zA-Z-]+) prov-nl.php?item=$1 [NC,L]
+# Provinces Netherlands
+RewriteRule ^(shemale-drenthe|shemale-flevoland|shemale-friesland|shemale-gelderland|shemale-groningen|shemale-limburg-nl|shemale-noord-brabant|shemale-noord-holland|shemale-overijssel|shemale-utrecht|shemale-zeeland|shemale-zuid-holland)/?$ prov-nl.php?item=$1 [L,QSA]
 
-RewriteRule ^shemales-([0-9a-zA-Z-]+) prov-be.php?item=$1 [NC,L]
+# Provinces Belgium
+RewriteRule ^(shemale-antwerpen|shemale-brussel|shemale-henegouwen|shemale-limburg-be|shemale-luik|shemale-luxemburg|shemale-namen|shemale-oost-vlaanderen|shemale-vlaams-brabant|shemale-waals-brabant|shemale-west-vlaanderen)/?$ prov-be.php?item=$1 [L,QSA]
 
-ErrorDocument 404 https://sex55.net/404.php
+# Provinces United Kingdom
+RewriteRule ^(shemale-east-midlands|shemale-east-of-england|shemale-london|shemale-north-east-england|shemale-north-west-england|shemale-northern-ireland|shemale-scotland|shemale-south-east-england|shemale-south-west-england|shemale-wales|shemale-west-midlands|shemale-yorkshire-and-the-humber)/?$ prov-uk.php?item=$1 [L,QSA]
+
+# Provinces Germany
+RewriteRule ^(shemale-baden-wurttemberg|shemale-bayern|shemale-berlin|shemale-brandenburg|shemale-bremen|shemale-hamburg|shemale-hessen|shemale-mecklenburg-vorpommern|shemale-niedersachsen|shemale-nordrhein-westfalen|shemale-rheinland-pfalz|shemale-saarland|shemale-sachsen|shemale-sachsen-anhalt|shemale-schleswig-holstein|shemale-thuringen)/?$ prov-de.php?item=$1 [L,QSA]
+
+# Provinces Austria
+RewriteRule ^(shemale-burgenland|shemale-karnten|shemale-niederosterreich|shemale-oberosterreich|shemale-salzburg|shemale-steiermark|shemale-tirol|shemale-vorarlberg|shemale-wien)/?$ prov-at.php?item=$1 [L,QSA]
+
+# Provinces Switzerland
+RewriteRule ^(shemale-aargau|shemale-appenzell|shemale-basel-land|shemale-basel-stadt|shemale-bern|shemale-fribourg|shemale-geneve|shemale-glarus|shemale-graubunden|shemale-jura|shemale-luzern|shemale-neuchatel|shemale-nidwalden|shemale-obwalden|shemale-schaffhausen|shemale-schwyz|shemale-solothurn|shemale-st-gallen|shemale-thurgau|shemale-ticino|shemale-uri|shemale-valais|shemale-vaud|shemale-zug|shemale-zurich)/?$ prov-ch.php?item=$1 [L,QSA]
+
+ErrorDocument 404 https://shemaledaten.net/404.php
 
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/plain
