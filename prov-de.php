@@ -36,7 +36,7 @@
     <div class="row" v-cloak>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item" id="Slankie" v-for="profile in filtered_profiles">
         <div class="card h-100">
-            <a :href="'profile.php?country=de&id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name" @error="imgError"></a>
+            <a :href="'shemale-' + profile.slug + '?id=' + profile.id"><img class="card-img-top" :src="profile.src.replace('150x150', '300x300')" :alt="profile.name" @error="imgError"></a>
             <div class="card-body">
                 <div class="card-top">
                   <h4 class="card-title">{{ profile.name }}</h4>
@@ -48,7 +48,7 @@
                     <li class="list-group-item">Regio: {{ profile.province }}</li>
                 </ul>
             </div>
-            <a :href="'profile.php?country=de&id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a></div>
+            <a :href="'shemale-' + profile.slug + '?id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a></div>
         </div>
         <script>
             var api_url= "<?= api_base('de'); ?>/profile/province_age/de/<?= rawurlencode($provde['name']); ?>/18/45/120/S";
