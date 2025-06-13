@@ -60,7 +60,7 @@ var profiel= new Vue({
                     }
                     var slug = slugify(that.profile.name || '');
                     if(slug){
-                        var newUrl = '/date-' + slug;
+                        var newUrl = '/shemale-' + slug;
                         var link = document.querySelector('link[rel=canonical]');
                         if(link){
                             link.setAttribute('href', 'https://shemaledaten.net' + newUrl);
