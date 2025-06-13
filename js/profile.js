@@ -63,7 +63,7 @@ var profiel= new Vue({
                         var newUrl = '/date-' + slug;
                         var link = document.querySelector('link[rel=canonical]');
                         if(link){
-                            link.setAttribute('href', 'https://18date.net' + newUrl);
+                            link.setAttribute('href', 'https://shemaledaten.net' + newUrl);
                         }
                         document.title = 'Date ' + that.profile.name;
                         history.replaceState({}, '', newUrl);
