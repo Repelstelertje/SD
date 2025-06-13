@@ -1,12 +1,3 @@
-function slugify(str){
-    return str.toString().toLowerCase()
-        .replace(/\s+/g,'-')
-        .replace(/[^\w-]+/g,'')
-        .replace(/--+/g,'-')
-        .replace(/^-+/, '')
-        .replace(/-+$/, '');
-}
-
 var oproepjes= new Vue({
     el: "#oproepjes",
     created: function(){
@@ -45,7 +36,6 @@ var oproepjes= new Vue({
                             if(p.src && p.src.indexOf('no_img_Vrouw.jpg') !== -1){
                                 p.src = 'img/fallback.svg';
                             }
-                            p.slug = slugify(p.name || '');
                             return p;
                         });
                     } else {
