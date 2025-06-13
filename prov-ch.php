@@ -1,4 +1,4 @@
-/120/T<?php
+<?php
         define("TITLE", "Shemales uit");
 
   include('includes/arr_prov_ch.php');
