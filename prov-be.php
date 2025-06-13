@@ -11,7 +11,7 @@
         $provbe = null;
         if(isset($_GET['item'])) {
                 $provincie = strip_bad_chars( $_GET['item'] );
-                $provincie = preg_replace('/^sexdate-/', '', $provincie);
+                $provincie = preg_replace('/^shemale-/', '', $provincie);
                 $provincie = preg_replace('/-be$/', '', $provincie);
                 if (isset($be[$provincie])) {
                         $provbe = $be[$provincie];
@@ -53,7 +53,7 @@
         </div>
       </div>
       <script>
-        var api_url= "<?= api_base('be'); ?>/profile/province_age/be/<?= rawurlencode($provbe['name']); ?>/18/45/120/S";
+        var api_url= "<?= api_base('be'); ?>/profile/province_age/be/<?= rawurlencode($provbe['name']); ?>/120/T";
       </script>
     </div><!-- /.row -->
     <!-- Pagination -->
@@ -78,7 +78,7 @@
       <div class="jumbotron text-center">
         <a href="https://zoekertjesbelgie.be/dating-<?php echo $provbe['img']; ?>" class="btn btn-primary btn-tips" target="_blank">Dating Zoekertjes <?php echo $provbe['name']; ?></a>
         <a href="https://sex55.net/sexdate-<?php echo $provbe['img']; ?>" class="btn btn-primary btn-tips" target="_blank">55+ Sexdate <?php echo $provbe['name']; ?></a>
-        <a href="https://18date.net/shemales-<?php echo $provbe['img']; ?>" class="btn btn-primary btn-tips" target="_blank">18+ Sexdate <?php echo $provbe['name']; ?></a>
+        <a href="https://18date.net/sexdate-<?php echo $provbe['img']; ?>" class="btn btn-primary btn-tips" target="_blank">18+ Sexdate <?php echo $provbe['name']; ?></a>
       </div>
     </div>
   </div> <!-- container -->

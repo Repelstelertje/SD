@@ -66,7 +66,7 @@
 
 <?php
   $canonical = 'https://shemaledaten.net';
-  $pageTitle = '55+ Sexdating | shemaledaten.net';
+  $pageTitle = 'Shemale Dating | shemaledaten.net';
   $ogImage = 'https://shemaledaten.net/img/fb.png';
 
   if(isset($_GET['item'])){
@@ -126,7 +126,7 @@
       $pageTitle = 'Date ' . htmlspecialchars($profile_name, ENT_QUOTES, 'UTF-8');
     } else {
       $canonical = 'https://shemaledaten.net/profile?id=' . $id;
-      $pageTitle = 'shemale ' . $id . ' | shemaledaten.net';
+      $pageTitle = 'Shemale ' . $id . ' | shemaledaten.net';
     }
     if($profile_img){
       $ogImage = $profile_img;

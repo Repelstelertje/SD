@@ -1,12 +1,12 @@
 <?php
-	define("TITLE", "Daten");
+	define("TITLE", "Shemale");
   include('includes/header.php');
 ?>
 <!-- Page Content -->
     <div class="container" id="profiel">
       <div id="top-banner"></div>
       <div class="jumbotron my-4">
-        <h1 class="text-center">Sexdate met {{ profile.name }} uit {{ profile.city }}</h1>
+        <h1 class="text-center">Shemale {{ profile.name }} uit {{ profile.city }}</h1>
         <hr>
         <div class="row">
 

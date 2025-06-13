@@ -1,4 +1,4 @@
-<?php
+/120/T<?php
         define("TITLE", "Shemales uit");
 
   include('includes/arr_prov_at.php');
@@ -11,7 +11,7 @@
         $provat = null;
         if(isset($_GET['item'])) {
                 $provincie = strip_bad_chars( $_GET['item'] );
-                $provincie = preg_replace('/^sexdate-/', '', $provincie);
+                $provincie = preg_replace('/^shemale-/', '', $provincie);
                 if (isset($at[$provincie])) {
                         $provat = $at[$provincie];
                 }
@@ -52,7 +52,7 @@
         </div>  
     </div><!-- /.row -->
     <script>
-        var api_url= "<?= api_base('at'); ?>/profile/province_age/at/<?= rawurlencode($provat['name']); ?>/18/45/120/S";
+        var api_url= "<?= api_base('at'); ?>/profile/province_age/at/<?= rawurlencode($provat['name']); ?>/120/T";
     </script>
 
     <!-- Pagination -->
@@ -76,7 +76,7 @@
         </div>
         <div class="jumbotron text-center">
             <a href="https://sex55.net/sexdate-<?php echo $provat['img']; ?>" class="btn btn-primary btn-tips" target="_blank">55+ Sexdate <?php echo $provat['name']; ?></a>
-            <a href="https://18date.net/shemale-<?php echo $provat['img']; ?>" class="btn btn-primary btn-tips" target="_blank">18+ Sexdate <?php echo $provat['name']; ?></a>
+            <a href="https://18date.net/sexdate-<?php echo $provat['img']; ?>" class="btn btn-primary btn-tips" target="_blank">18+ Sexdate <?php echo $provat['name']; ?></a>
         </div>
     </div>
   </div> <!-- container -->
