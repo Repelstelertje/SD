@@ -18,14 +18,14 @@ function getCookieConsent() {
 function loadAnalytics() {
   // Google Analytics
   const script = document.createElement('script');
-  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-TFQ77HGPY0';
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-072C2ZCNQF';
   script.async = true;
   document.head.appendChild(script);
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-MJEYVZDR7N');
+  gtag('config', 'G-072C2ZCNQF');
 }
 function loadMarketing() {
   // Google Ads Example (conversion tracking)
