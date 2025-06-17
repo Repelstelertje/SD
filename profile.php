@@ -24,7 +24,7 @@
               <label class="info">Leeftijd:</label> {{ profile.age }}<br>
               <label class="info">Relatiestatus:</label> {{ profile.relationship }}<br>
               <label class="info">Lengte:</label> {{ profile.length }}<br>
-              <a :href="profile.url + '?ref=' + ref_id" class="btn btn-primary">Stuur gratis bericht</a>
+              <a :href="profile.url + '?ref=' + ref_id" class="btn btn-primary mt-1" id="send-msg-btn">Stuur gratis bericht</a>
             </p>
           </div>  
         </div>
