@@ -2,11 +2,6 @@ Options +FollowSymLinks
 
 RewriteEngine on
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.+)$ $1.php [QSA]
-
 # Provinces Netherlands
 RewriteRule ^(shemale-drenthe|shemale-flevoland|shemale-friesland|shemale-gelderland|shemale-groningen|shemale-limburg-nl|shemale-noord-brabant|shemale-noord-holland|shemale-overijssel|shemale-utrecht|shemale-zeeland|shemale-zuid-holland)/?$ prov-nl.php?item=$1 [L,QSA]
 
@@ -24,6 +19,20 @@ RewriteRule ^(shemale-burgenland|shemale-karnten|shemale-niederosterreich|shemal
 
 # Provinces Switzerland
 RewriteRule ^(shemale-aargau|shemale-appenzell|shemale-basel-land|shemale-basel-stadt|shemale-bern|shemale-fribourg|shemale-geneve|shemale-glarus|shemale-graubunden|shemale-jura|shemale-luzern|shemale-neuchatel|shemale-nidwalden|shemale-obwalden|shemale-schaffhausen|shemale-schwyz|shemale-solothurn|shemale-st-gallen|shemale-thurgau|shemale-ticino|shemale-uri|shemale-valais|shemale-vaud|shemale-zug|shemale-zurich)/?$ prov-ch.php?item=$1 [L,QSA]
+
+# Datingtips
+RewriteRule ^datingtips/?$ datingtips.php?item=datingtips [L,QSA]
+RewriteRule ^datingtips-nederland/?$ datingtips.php?item=nl [L,QSA]
+RewriteRule ^datingtips-belgie/?$ datingtips.php?item=be [L,QSA]
+RewriteRule ^datingtips-duitsland/?$ datingtips.php?item=de [L,QSA]
+RewriteRule ^datingtips-verenigd-koninkrijk/?$ datingtips.php?item=uk [L,QSA]
+RewriteRule ^datingtips-oostenrijk/?$ datingtips.php?item=at [L,QSA]
+RewriteRule ^datingtips-zwitserland/?$ datingtips.php?item=ch [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [QSA,L]
 
 ErrorDocument 404 https://shemaledaten.net/404.php
 

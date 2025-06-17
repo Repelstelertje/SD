@@ -63,4 +63,15 @@
                         ?>
                 </div>
         </li>
+        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle drpdwn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Datingtips</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <?php
+                        foreach ($navItemsTips as $item) {
+                                echo "<a class=\"dropdown-item\" href=\"$item[slug]\">$item[title]</a>";
+                        }
+                        ?>
+                </div>
+        </li>
 </ul>
+

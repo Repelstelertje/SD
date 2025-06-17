@@ -1,6 +1,7 @@
 <?php
+$base = __DIR__;
     define('TITLE', 'Privacybeleid');
-    include('includes/header.php');
+    include $base . '/includes/header.php';
 ?>
 <div class="container">
   <div class="jumbotron my-4">
@@ -51,4 +52,4 @@
     <p>Laatst bijgewerkt: juni 2025</p>
   </div>
 </div>
-<?php include('includes/footer.php'); ?>
+<?php include $base . '/includes/footer.php'; ?>

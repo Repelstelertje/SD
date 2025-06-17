@@ -1,6 +1,7 @@
 <?php
-	define("TITLE", "Shemale");
-  include('includes/header.php');
+$base = __DIR__;
+	define("TITLE", "Daten");
+  include $base . '/includes/header.php';
 ?>
 <!-- Page Content -->
     <div class="container" id="profiel">
@@ -65,5 +66,5 @@
 
 <?php 
   $type = "profile";
-  include('includes/footer.php'); 
+  include $base . '/includes/footer.php'; 
 ?>

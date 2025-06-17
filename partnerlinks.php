@@ -1,7 +1,8 @@
 <?php
+$base = __DIR__;
 define('TITLE', 'Partnerlinks');
-include('includes/header.php');
-include('includes/partner_links.php');
+include $base . '/includes/header.php';
+include $base . '/includes/partner_links.php';
 ?>
 <div class="container">
     <div class="jumbotron my-4">
@@ -25,5 +26,5 @@ include('includes/partner_links.php');
     </div>
 </div>
 <?php
-include('includes/footer.php');
+include $base . '/includes/footer.php';
 ?>

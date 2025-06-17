@@ -436,18 +436,53 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://shemaledaten.nl/privacy.php</loc>
+  <loc>https://shemaledaten.net/privacy.php</loc>
   <lastmod>2025-06-13</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://shemaledaten.nl/cookie-policy.php</loc>
+  <loc>https://shemaledaten.net/cookie-policy.php</loc>
   <lastmod>2025-06-13</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://shemaledaten.nl/partnerlinks.php</loc>
+  <loc>https://shemaledaten.net/partnerlinks.php</loc>
   <lastmod>2025-06-13</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shemaledaten.net/datingtips</loc>
+  <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shemaledaten.net/datingtips-nederland</loc>
+  <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shemaledaten.net/datingtips-belgie</loc>
+  <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shemaledaten.net/datingtips-duitsland</loc>
+  <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shemaledaten.net/datingtips-verenigd-koninkrijk</loc>
+  <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shemaledaten.net/datingtips-oostenrijk</loc>
+  <lastmod>2025-06-12T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shemaledaten.net/datingtips-zwitserland</loc>
+  <lastmod>2025-06-12T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 </urlset>

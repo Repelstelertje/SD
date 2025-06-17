@@ -1,12 +1,8 @@
 <?php
-        define("TITLE", "Shemales uit");
-
-  include('includes/arr_prov_at.php');
-
-        function strip_bad_chars( $input ) {
-                $output = preg_replace("/[^a-zA-Z0-9_-]/", "",$input);
-                return $output;
-        }
+$base = __DIR__;
+define("TITLE", "Daten in");
+include $base . '/includes/arr_prov_at.php';
+require_once $base . '/includes/utils.php';
 
         $provat = null;
         if(isset($_GET['item'])) {
@@ -19,12 +15,12 @@
 
         if (!$provat) {
                 header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
-                include '404.php';
+                include $base . '/404.php';
                 exit;
         }
 
   $metaDescription = $provat['info'];
-  include('includes/header.php');
+  include $base . '/includes/header.php';
 ?>
 
 <div class="container">
@@ -81,5 +77,5 @@
     </div>
   </div> <!-- container -->
 <?php
-        include('includes/footer.php');
+        include $base . '/includes/footer.php';
 ?>

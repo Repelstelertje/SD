@@ -1,4 +1,5 @@
 <?php
+$base = __DIR__;
 // Configuration for API endpoints
 
 // Base API URL used for most countries. Can be overridden via environment variable
