@@ -131,6 +131,10 @@
     if($profile_img){
       $ogImage = $profile_img;
     }
+  } elseif(isset($_GET['slug'])){
+    $slugParam = filter_var($_GET['slug'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $canonical = 'https://shemaledaten.net/shemale-' . $slugParam;
+    $pageTitle = 'Shemale ' . $slugParam . ' | shemaledaten.net';
   }
 
   echo '<link rel="canonical" href="' . $canonical . '" >';

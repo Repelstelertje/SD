@@ -62,6 +62,7 @@ $base = __DIR__;
 <script>
   var api_url = "<?= $api_url ?>";
   var ref_id = "<?= $ref_id ?>"; //de ref_id vd landingwebsite
+  var profile_slug = "<?= isset($_GET['slug']) ? htmlspecialchars($_GET['slug'], ENT_QUOTES, 'UTF-8') : '' ?>";
 </script>
 
 <?php 
