@@ -3,8 +3,8 @@
   $companyName = "ShemaleDaten.net";
   include('includes/nav_items.php');
   // Config is required for API lookups when rendering profile pages
-  include_once('config.php');
-
+  include_once $base . '/config.php';
+  
   /**
    * Convert a string to a URL friendly slug.
    *
