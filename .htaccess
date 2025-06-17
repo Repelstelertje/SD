@@ -29,6 +29,9 @@ RewriteRule ^datingtips-verenigd-koninkrijk/?$ datingtips.php?item=uk [L,QSA]
 RewriteRule ^datingtips-oostenrijk/?$ datingtips.php?item=at [L,QSA]
 RewriteRule ^datingtips-zwitserland/?$ datingtips.php?item=ch [L,QSA]
 
+# Profile slugs
+RewriteRule ^shemale-([a-z0-9-]+)/?$ profile.php?slug=$1 [L,QSA]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
