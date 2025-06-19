@@ -65,29 +65,55 @@
 <meta name="theme-color" content="#ffffff">
 
 <?php
-  $canonical = 'https://shemaledaten.net';
-  $pageTitle = 'Shemale Dating | shemaledaten.net';
-  $ogImage = 'https://shemaledaten.net/img/fb.png';
+  $canonicalProvided = isset($canonical);
+  $pageTitleProvided = isset($pageTitle);
+  $ogImageProvided   = isset($ogImage);
 
-  if(isset($_GET['item'])){
+  if (!$canonicalProvided) {
+    $canonical = 'https://shemaledaten.net';
+  }
+
+  if (!$pageTitleProvided) {
+    $pageTitle = 'Shemale Dating | shemaledaten.net';
+  }
+
+  if (!$ogImageProvided) {
+    $ogImage = 'https://shemaledaten.net/img/fb.png';
+  }
+
+  if(!$canonicalProvided && isset($_GET['item'])){
     $item = filter_var($_GET['item'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $item = preg_replace('/^shemale-/', '', $item);
     $canonical = 'https://shemaledaten.net/shemale-' . $item;
-    $pageTitle = 'shemale ' . $item . ' | shemaledaten.net';
-    if(isset($provnl['img'])){
-      $ogImage = 'https://shemaledaten.net/img/front/' . $provnl['img'] . '.jpg';
-    } elseif(isset($provbe['img'])){
-      $ogImage = 'https://shemaledaten.net/img/front/' . $provbe['img'] . '.jpg';
-    } elseif(isset($provuk['img'])){
-      $ogImage = 'https://shemaledaten.net/img/front/' . $provuk['img'] . '.jpg';
-    } elseif(isset($provde['img'])){
-      $ogImage = 'https://shemaledaten.net/img/front/' . $provde['img'] . '.jpg';
-    } elseif(isset($provat['img'])){
-      $ogImage = 'https://shemaledaten.net/img/front/' . $provat['img'] . '.jpg';
-    } elseif(isset($provch['img'])){
-      $ogImage = 'https://shemaledaten.net/img/front/' . $provch['img'] . '.jpg';
+    if(!$pageTitleProvided){
+      $pageTitle = 'shemale ' . $item . ' | shemaledaten.net';
     }
-  } elseif(isset($_GET['id'])){
+    if(isset($provnl['img'])){
+      if(!$ogImageProvided){
+        $ogImage = 'https://shemaledaten.net/img/front/' . $provnl['img'] . '.jpg';
+      }
+    } elseif(isset($provbe['img'])){
+      if(!$ogImageProvided){
+        $ogImage = 'https://shemaledaten.net/img/front/' . $provbe['img'] . '.jpg';
+      }
+    } elseif(isset($provuk['img'])){
+      if(!$ogImageProvided){
+        $ogImage = 'https://shemaledaten.net/img/front/' . $provuk['img'] . '.jpg';
+      }
+    } elseif(isset($provde['img'])){
+      if(!$ogImageProvided){
+        $ogImage = 'https://shemaledaten.net/img/front/' . $provde['img'] . '.jpg';
+      }
+    } elseif(isset($provat['img'])){
+      if(!$ogImageProvided){
+        $ogImage = 'https://shemaledaten.net/img/front/' . $provat['img'] . '.jpg';
+      }
+    } elseif(isset($provch['img'])){
+      if(!$ogImageProvided){
+        $ogImage = 'https://shemaledaten.net/img/front/' . $provch['img'] . '.jpg';
+      }
+    }
+  } elseif(!$canonicalProvided && isset($_GET['id'])){
     $id = filter_var($_GET['id'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $country = isset($_GET['country']) ? $_GET['country'] : '';
     switch ($country) {
@@ -123,18 +149,26 @@
     if($profile_name){
       $slug = slugify($profile_name);
       $canonical = 'https://shemaledaten.net/shemale-' . $slug;
-      $pageTitle = 'Date ' . htmlspecialchars($profile_name, ENT_QUOTES, 'UTF-8');
+      if(!$pageTitleProvided){
+        $pageTitle = 'Date ' . htmlspecialchars($profile_name, ENT_QUOTES, 'UTF-8');
+      }
     } else {
       $canonical = 'https://shemaledaten.net/profile?id=' . $id;
-      $pageTitle = 'Shemale ' . $id . ' | shemaledaten.net';
+      if(!$pageTitleProvided){
+        $pageTitle = 'Shemale ' . $id . ' | shemaledaten.net';
+      }
     }
     if($profile_img){
-      $ogImage = $profile_img;
+      if(!$ogImageProvided){
+        $ogImage = $profile_img;
+      }
     }
-  } elseif(isset($_GET['slug'])){
+  } elseif(!$canonicalProvided && isset($_GET['slug'])){
     $slugParam = filter_var($_GET['slug'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $canonical = 'https://shemaledaten.net/shemale-' . $slugParam;
-    $pageTitle = 'Shemale ' . $slugParam . ' | shemaledaten.net';
+    if(!$pageTitleProvided){
+      $pageTitle = 'Shemale ' . $slugParam . ' | shemaledaten.net';
+    }
   }
 
   echo '<link rel="canonical" href="' . $canonical . '" >';
@@ -144,6 +178,11 @@
   echo '<meta property="og:title" content="' . htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') . '">';
   echo '<meta property="og:description" content="' . htmlspecialchars($description, ENT_QUOTES, 'UTF-8') . '">';
   echo '<meta property="og:image" content="' . $ogImage . '">';
+  echo '<meta name="twitter:card" content="summary_large_image">';
+  echo '<meta name="twitter:title" content="' . htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8') . '">';
+  echo '<meta name="twitter:description" content="' . htmlspecialchars($description, ENT_QUOTES, 'UTF-8') . '">';
+  echo '<meta name="twitter:image" content="' . $ogImage . '">';
+  echo '<meta name="twitter:url" content="' . $canonical . '">';
 ?>
 
 <!-- Bootstrap core CSS -->
