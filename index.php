@@ -90,7 +90,7 @@ $base = __DIR__;
                       ?>
                       <div class="col-lg-3 col-md-6 mb-4">
             <div class="card h-100 text-left">
-              <a href="<?php echo $slug; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Shemale <?php echo $item['name']; ?>" @error="imgError"></a>
+              <a href="<?php echo $slug; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpeg" alt="Shemale <?php echo $item['name']; ?>" @error="imgError"></a>
               <div class="card-body">
                 <a href="<?php echo $slug; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
                 <hr>
@@ -112,7 +112,7 @@ $base = __DIR__;
     ?>
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="card h-100 text-left">
-        <a href="<?php echo $slug; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Shemale <?php echo $item['name']; ?>" @error="imgError"></a>
+        <a href="<?php echo $slug; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpeg" alt="Shemale <?php echo $item['name']; ?>" @error="imgError"></a>
         <div class="card-body">
           <a href="<?php echo $slug; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
           <hr>
@@ -130,7 +130,7 @@ $base = __DIR__;
     <?php foreach ($uk as $provuk => $item) { ?>
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="card h-100 text-left">
-        <a href="shemale-<?php echo $provuk; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Shemale <?php echo $item['name']; ?>" @error="imgError"></a>
+        <a href="shemale-<?php echo $provuk; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpeg" alt="Shemale <?php echo $item['name']; ?>" @error="imgError"></a>
         <div class="card-body">
           <a href="shemale-<?php echo $provuk; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
           <hr>
@@ -146,7 +146,7 @@ $base = __DIR__;
     <?php foreach ($de as $provde => $item) { ?>
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="card h-100 text-left">
-        <a href="shemale-<?php echo $provde; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Shemale <?php echo $item['name']; ?>" @error="imgError"></a>
+        <a href="shemale-<?php echo $provde; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpeg" alt="Shemale <?php echo $item['name']; ?>" @error="imgError"></a>
         <div class="card-body">
           <a href="shemale-<?php echo $provde; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
           <hr>
@@ -162,7 +162,7 @@ $base = __DIR__;
     <?php foreach ($at as $provat => $item) { ?>
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="card h-100 text-left">
-        <a href="shemale-<?php echo $provat; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Shemale <?php echo $item['name']; ?>" @error="imgError"></a>
+        <a href="shemale-<?php echo $provat; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpeg" alt="Shemale <?php echo $item['name']; ?>" @error="imgError"></a>
         <div class="card-body">
           <a href="shemale-<?php echo $provat; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
           <hr>
@@ -178,7 +178,7 @@ $base = __DIR__;
     <?php foreach ($ch as $provch => $item) { ?>
     <div class="col-lg-3 col-md-6 mb-4">
       <div class="card h-100 text-left">
-        <a href="shemale-<?php echo $provch; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpg" alt="Shemale <?php echo $item['name']; ?>" @error="imgError"></a>
+        <a href="shemale-<?php echo $provch; ?>"><img class="card-img-top" src="img/front/<?php echo $item['img']; ?>.jpeg" alt="Shemale <?php echo $item['name']; ?>" @error="imgError"></a>
         <div class="card-body">
           <a href="shemale-<?php echo $provch; ?>"><h4 class="card-title"><?php echo $item['name']; ?></h4></a>
           <hr>

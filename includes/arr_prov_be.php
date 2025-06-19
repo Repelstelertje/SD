@@ -31,7 +31,7 @@ $be = array(
         'title' => "Shemale date Limburg",
         'info' => "Ontdek shemales in Limburg voor een spannende date of discreet contact. Trans vrouwen ontmoeten? Dan ben je hier op de juiste plek.",
         'tekst' => "<h2>Shemale dating in Limburg</h2><p>Ben je op zoek naar een spannende ervaring met een shemale in Limburg? Dan zit je goed op shemaledaten.net. Hier ontmoet je trans vrouwen die openstaan voor contact met mannen die weten wat ze willen. Of je nu nieuwsgierig bent, ervaring hebt met trans dating, of gewoon zin hebt in een discrete, erotische ontmoeting – op deze site ben je aan het juiste adres.</p><p>In Limburg zijn er dagelijks actieve profielen van trans vrouwen die klaar zijn om te chatten of af te spreken. Bekijk de profielen, stuur een bericht en leg vandaag nog contact. Onze community is discreet, actief en speciaal gericht op shemale dating in België.</p><p>Wacht niet langer – schrijf je gratis in op shemaledaten.net en ontdek het unieke aanbod van trans vrouwen in Limburg.</p>",
-        'img' => "limburg"
+        'img' => "limburg-be"
     ),
 
     "luik" => array(
