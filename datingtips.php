@@ -22,6 +22,22 @@ $base = __DIR__;
         }
 
         $metaDescription = $tips['info'];
+
+        // Map query values to their corresponding slug for the canonical URL
+        $slugMap = array(
+            'datingtips' => 'datingtips',
+            'nl' => 'datingtips-nederland',
+            'be' => 'datingtips-belgie',
+            'de' => 'datingtips-duitsland',
+            'uk' => 'datingtips-verenigd-koninkrijk',
+            'at' => 'datingtips-oostenrijk',
+            'ch' => 'datingtips-zwitserland'
+        );
+
+        $slug = $slugMap[$datingtip] ?? 'datingtips';
+        $canonical = 'https://shemaledaten.net/' . $slug;
+        $pageTitle = $tips['title'];
+
         include $base . '/includes/header.php';
 ?>
 
