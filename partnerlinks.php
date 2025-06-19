@@ -1,6 +1,8 @@
 <?php
 $base = __DIR__;
 define('TITLE', 'Partnerlinks');
+$canonical = 'https://shemaledaten.net/partnerlinks';
+$pageTitle = 'Partnerlinks | shemaledaten.net';
 include $base . '/includes/header.php';
 include $base . '/includes/partner_links.php';
 ?>
