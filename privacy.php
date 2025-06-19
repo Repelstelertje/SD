@@ -1,7 +1,9 @@
 <?php
 $base = __DIR__;
-    define('TITLE', 'Privacybeleid');
-    include $base . '/includes/header.php';
+define('TITLE', 'Privacybeleid');
+$canonical = 'https://shemaledaten.net/privacy';
+$pageTitle = 'Privacybeleid | shemaledaten.net';
+include $base . '/includes/header.php';
 ?>
 <div class="container">
   <div class="jumbotron my-4">
