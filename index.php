@@ -56,7 +56,7 @@ $base = __DIR__;
         </div>
         <script>
             window.addEventListener('load', function(){
-                createOproepjes('#oproepjes-nl', "<?= api_base('nl'); ?>/profile/banner9/120");
+                createOproepjes('#oproepjes-nl', "<?= api_base('nl'); ?>/profile/banner/120");
             });
         </script>
         <!-- Pagination -->
@@ -100,7 +100,7 @@ $base = __DIR__;
         </div>
         <script>
             window.addEventListener('load', function(){
-                createOproepjes('#oproepjes-be', "<?= api_base('be'); ?>/profile/banner9/120");
+                createOproepjes('#oproepjes-be', "<?= api_base('be'); ?>/profile/banner/120");
             });
         </script>
         <!-- Pagination -->
@@ -144,7 +144,7 @@ $base = __DIR__;
         </div>
         <script>
             window.addEventListener('load', function(){
-                createOproepjes('#oproepjes-uk', "<?= api_base('uk'); ?>/profile/banner9/120");
+                createOproepjes('#oproepjes-uk', "<?= api_base('uk'); ?>/profile/banner/120");
             });
         </script>
         <!-- Pagination -->
@@ -188,7 +188,7 @@ $base = __DIR__;
         </div>
         <script>
             window.addEventListener('load', function(){
-                createOproepjes('#oproepjes-de', "<?= api_base('de'); ?>/profile/banner9/120");
+                createOproepjes('#oproepjes-de', "<?= api_base('de'); ?>/profile/banner3/120");
             });
         </script>
         <!-- Pagination -->
@@ -232,7 +232,7 @@ $base = __DIR__;
         </div>
         <script>
             window.addEventListener('load', function(){
-                createOproepjes('#oproepjes-at', "<?= api_base('at'); ?>/profile/banner9/120");
+                createOproepjes('#oproepjes-at', "<?= api_base('at'); ?>/profile/banner3/120");
             });
         </script>
         <!-- Pagination -->
@@ -276,7 +276,7 @@ $base = __DIR__;
         </div>
         <script>
             window.addEventListener('load', function(){
-                createOproepjes('#oproepjes-ch', "<?= api_base('ch'); ?>/profile/banner9/120");
+                createOproepjes('#oproepjes-ch', "<?= api_base('ch'); ?>/profile/banner3/120");
             });
         </script>
         <!-- Pagination -->
