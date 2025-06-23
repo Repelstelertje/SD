@@ -1,13 +1,25 @@
-var oproepjes= new Vue({
-    el: "#oproepjes",
-    created: function(){
-        this.init();
-    },
-    data: {
-        profiles: [],
-        page: 1,
-        ppp: 20,    //profiles per page
-    },
+function slugify(str){
+    return str.toString().toLowerCase()
+        .replace(/\s+/g,'-')
+        .replace(/[^\w-]+/g,'')
+        .replace(/--+/g,'-')
+        .replace(/^-+/, '')
+        .replace(/-+$/, '');
+}
+
+function createOproepjes(el, apiUrl){
+    return new Vue({
+        el: el,
+        created: function(){
+            this.init();
+        },
+        data: {
+            profiles: [],
+            page: 1,
+            ppp: 20,    //profiles per page
+            api_url: apiUrl,
+            dataError: false
+        },
     computed: {
         filtered_profiles: function(){
             //afhankelijk van pagina nummer, een deel vd profielen tonen
@@ -25,14 +37,15 @@ var oproepjes= new Vue({
     },
     methods:  {
         init: function(){
-            if (typeof api_url === 'undefined') {
+            if (!this.api_url) {
                 // Skip API call when no endpoint is defined on the page
                 return;
             }
-            axios.get(api_url)
+            var that = this;
+            axios.get(this.api_url)
                 .then(function(response){
                     if(response.data && Array.isArray(response.data.profiles)){
-                        oproepjes.profiles = response.data.profiles.map(function(p){
+                        that.profiles = response.data.profiles.map(function(p){
                             if(p.src && p.src.indexOf('no_img_Vrouw.jpg') !== -1){
                                 p.src = 'img/fallback.svg';
                             }
@@ -40,10 +53,12 @@ var oproepjes= new Vue({
                         });
                     } else {
                         console.error('Invalid profile data', response.data);
+                        that.dataError = true;
                     }
                 })
                 .catch(function (error) {
-                    console.log(error);
+                    console.error(error);
+                    that.dataError = true;
                 });
         },
         set_page_number: function(page){
@@ -54,11 +69,20 @@ var oproepjes= new Vue({
             } else {
                 this.page= page;
             }
-            
-            
+
+            var el = this.$el;
+            this.$nextTick(function(){
+                if (el && typeof el.scrollIntoView === 'function') {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                } else {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            });
+
         },
         imgError: function(event){
             event.target.src = 'img/fallback.svg';
         }
     }
-});
+    });
+}

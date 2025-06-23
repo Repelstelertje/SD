@@ -1,5 +1,5 @@
 <?php
-// Datingtips - shemaledaten.net
+// Datingtips
 $datingtips = array(
 
     "datingtips" => array(

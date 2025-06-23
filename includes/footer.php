@@ -26,6 +26,7 @@
     </form>
   </div>
 </div>
+</main>
 </div> <!-- /.oproepjes -->
 <script src="js/vendor/vue.2.5.13.min.js"></script>
 <script src="js/vendor/axios.0.17.1.min.js"></script>

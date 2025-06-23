@@ -1,44 +1,31 @@
 <?php 
 $base = __DIR__;
-	define("TITLE", "Datingtips");
+define("TITLE", "Datingtips");
 
-        include $base . '/includes/array_tips.php';
+$canonical = 'https://shemaledaten.net/datingtips';
+$pageTitle = 'Datingtips | shemaledaten.net';
 
-        require_once $base . '/includes/utils.php';
-	
-        $datingtip = 'datingtips';
-        if(isset($_GET['item'])) {
-                $candidate = strip_bad_chars($_GET['item']);
-                if (isset($datingtips[$candidate])) {
-                        $datingtip = $candidate;
-                }
+include $base . '/includes/array_tips.php';
+
+require_once $base . '/includes/utils.php';
+
+$datingtip = 'datingtips';
+if(isset($_GET['item'])) {
+        $candidate = strip_bad_chars($_GET['item']);
+        if (isset($datingtips[$candidate])) {
+                $datingtip = $candidate;
         }
-        $tips = $datingtips[$datingtip] ?? null;
+}
+$tips = $datingtips[$datingtip] ?? null;
 
-        if (!$tips) {
-                header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
-                include $base . '/404.php';
-                exit;
-        }
+if (!$tips) {
+        header($_SERVER['SERVER_PROTOCOL'] . ' 404 Not Found');
+        include $base . '/404.php';
+        exit;
+}
 
-        $metaDescription = $tips['info'];
-
-        // Map query values to their corresponding slug for the canonical URL
-        $slugMap = array(
-            'datingtips' => 'datingtips',
-            'nl' => 'datingtips-nederland',
-            'be' => 'datingtips-belgie',
-            'de' => 'datingtips-duitsland',
-            'uk' => 'datingtips-verenigd-koninkrijk',
-            'at' => 'datingtips-oostenrijk',
-            'ch' => 'datingtips-zwitserland'
-        );
-
-        $slug = $slugMap[$datingtip] ?? 'datingtips';
-        $canonical = 'https://shemaledaten.net/' . $slug;
-        $pageTitle = $tips['title'];
-
-        include $base . '/includes/header.php';
+$metaDescription = $tips['meta'];
+include $base . '/includes/header.php';
 ?>
 
 <div class="container">

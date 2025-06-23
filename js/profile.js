@@ -79,7 +79,7 @@ var profiel= new Vue({
                         if(link){
                             link.setAttribute('href', 'https://shemaledaten.net' + newUrl);
                         }
-                        document.title = 'Date ' + that.profile.name;
+                        document.title = 'Shemale ' + that.profile.name;
                         history.replaceState({}, '', newUrl);
                     }
                 })

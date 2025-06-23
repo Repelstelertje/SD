@@ -6,6 +6,10 @@
 [v-cloak] {
   display: none;
 }
+html {
+  /* Offset scrolling to account for fixed header */
+  scroll-padding-top: 56px;
+}
 body {
 	color: #0B132B;
   	padding-top: 56px;
@@ -13,6 +17,9 @@ body {
   	position: relative;
 	padding-bottom: 78px;
 	min-height: 100vh;
+}
+main {
+  margin: 40px 0;
 }
 .navbar-brand {
 	font-weight: bold;
@@ -45,7 +52,9 @@ hr {
 	border: none !important;
 	padding: .0rem 0rem;
 }
-
+.list-group-item:before {
+    font-weight: bold;
+}
 @media only screen and (max-width: 600px) {
   h1, h2 {
     font-size: 1.5rem;
@@ -105,7 +114,11 @@ hr {
 	padding: 1rem;
 	background-color: rgba(255, 255, 255, 0.8);
 }
-
+.jumbotron[id^="land-"],
+.country-section {
+        /* Prevent fixed header from covering anchors */
+        scroll-margin-top: 56px;
+}
 .align-center {
 	display: block;
 	margin: 0px auto;
@@ -166,6 +179,18 @@ hr {
 
 .portfolio-item {
 	margin: 10px 0px;
+}
+
+/* Center all pagination elements */
+.pagination {
+    justify-content: center;
+}
+
+/* Ensure the pagination nav stretches across the row */
+.nav-pag {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .page-item.active .page-link {
@@ -230,4 +255,14 @@ footer {
 }
 .policy-links a {
     color: #ffffff;
+}
+/* Social */
+
+.addthis_inline_follow_toolbox {
+    margin-top: -5px;
+}
+
+/* Alert shown when profile data fails to load */
+.alert.data-error {
+    text-align: center;
 }
