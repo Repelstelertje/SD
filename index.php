@@ -11,22 +11,22 @@ $base = __DIR__;
     <hr>
     <h2>Zoek hier shemales bij jou in buurt!</h2>
     <div class="button-area">
-        <a class="btn btn-primary" href="#land-nl">Nederland</a>
+        <a class="btn btn-primary prov-btn" href="#land-nl">Nederland</a>
         </div>
         <div class="button-area">
-        <a class="btn btn-primary" href="#land-be">België</a>
+        <a class="btn btn-primary prov-btn" href="#land-be">België</a>
         </div>
         <div class="button-area">
-        <a class="btn btn-primary" href="#land-uk">UK</a>
+        <a class="btn btn-primary prov-btn" href="#land-uk">UK</a>
         </div>
         <div class="button-area">
-        <a class="btn btn-primary" href="#land-de">Duitsland</a>
+        <a class="btn btn-primary prov-btn" href="#land-de">Duitsland</a>
         </div>
         <div class="button-area">
-        <a class="btn btn-primary" href="#land-at">Oostenrijk</a>
+        <a class="btn btn-primary prov-btn" href="#land-at">Oostenrijk</a>
         </div>
         <div class="button-area">
-        <a class="btn btn-primary" href="#land-ch">Zwitserland</a>
+        <a class="btn btn-primary prov-btn" href="#land-ch">Zwitserland</a>
         </div>
     </div>
     <div id="top-banner"></div>
