@@ -31,13 +31,10 @@ include $base . '/includes/header.php';
 <div class="container">
         <div class='jumbotron my-4'>
                 <h1 class='text-center'><?php echo htmlspecialchars($tips["title"], ENT_QUOTES, 'UTF-8'); ?></h1>
+                <?php echo $tips["intro"]; ?>
         </div>
         <div class='jumbotron my-4'>
-                <?php
-                        // $tips["tekst"] contains trusted HTML defined in includes/array_tips.php
-                        // and is therefore output without additional escaping.
-                        echo $tips["tekst"];
-                ?>
+                <?php echo $tips["tekst"]; ?>
         </div>
 </div>
 

@@ -51,7 +51,7 @@ $base = __DIR__;
                         <li class="list-group-item">Provincie: {{ profile.province }}</li>
                     </ul>
                 </div>
-                <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a>
+                <a :href="'profile.php?country=<?php echo $country; ?>&id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a>
             </div>
         </div>
         <script>
@@ -95,7 +95,7 @@ $base = __DIR__;
                         <li class="list-group-item">Provincie: {{ profile.province }}</li>
                     </ul>
                 </div>
-                <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a>
+                <a :href="'profile.php?country=<?php echo $country; ?>&id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a>
             </div>
         </div>
         <script>
@@ -139,7 +139,7 @@ $base = __DIR__;
                         <li class="list-group-item">Regio: {{ profile.province }}</li>
                     </ul>
                 </div>
-                <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a>
+                <a :href="'profile.php?country=<?php echo $country; ?>&id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a>
             </div>
         </div>
         <script>
@@ -183,7 +183,7 @@ $base = __DIR__;
                         <li class="list-group-item">Provincie: {{ profile.province }}</li>
                     </ul>
                 </div>
-                <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a>
+                <a :href="'profile.php?country=<?php echo $country; ?>&id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a>
             </div>
         </div>
         <script>
@@ -227,7 +227,7 @@ $base = __DIR__;
                         <li class="list-group-item">Provincie: {{ profile.province }}</li>
                     </ul>
                 </div>
-                <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a>
+                <a :href="'profile.php?country=<?php echo $country; ?>&id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a>
             </div>
         </div>
         <script>
@@ -271,7 +271,7 @@ $base = __DIR__;
                         <li class="list-group-item">Regio: {{ profile.province }}</li>
                     </ul>
                 </div>
-                <a :href="'daten-met-' + slugify(profile.name) + '?id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a>
+                <a :href="'profile.php?country=<?php echo $country; ?>&id=' + profile.id" class="card-footer btn btn-primary">Bekijk profiel</a>
             </div>
         </div>
         <script>
