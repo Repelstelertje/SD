@@ -66,7 +66,7 @@ var profiel= new Vue({
             if(this.profile_slug && this.profile_id <= 0){
                 url = api_url + '?slug=' + encodeURIComponent(this.profile_slug);
             }
-            axios.get(api_url + this.profile_id)
+            axios.get(url)
                 .then(function(response){
                     that.profile = response.data.profile;
                     if(that.profile.profile_image_big && that.profile.profile_image_big.indexOf('no_img_Vrouw.jpg') !== -1){

@@ -35,7 +35,7 @@
 
 <head>
 
-<meta http-equiv="content-type" content-type="text/html" charset="utf-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <?php
   $defaultDescription = "Gratis dating - Ben jij op zoek naar een partner of een leuke gratis date? Hier vind je meer dan 10.000 vrijgezellen. Aanmelding is 100% gratis.";
