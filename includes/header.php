@@ -102,7 +102,7 @@
           break;
       }
     } else {
-      $item = preg_replace('/^sexdate-/', '', $item);
+      $item = preg_replace('/^(?:sexdate|shemale)-/', '', $item);
       $canonical = 'https://shemaledaten.net/shemale-' . $item;
       $pageTitle = 'Shemale ' . $item . ' | shemaledaten.net';
       if(isset($province['img'])){
