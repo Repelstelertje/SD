@@ -103,8 +103,11 @@ include $base . '/includes/header.php';
                 echo '<a href="https://oproepjesnederland.nl/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating Advertenties ' . $province['name'] . '</a>';
             } elseif ($country === 'be') {
                 echo '<a href="https://zoekertjesbelgie.be/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating Zoekertjes ' . $province['name'] . '</a>';
+            } elseif ($country === 'uk') {
+                echo '<a href="https://datingcontact.co.uk/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating Contact ' . $province['name'] . '</a>';
+            } elseif (in_array($country, [ 'de', 'at', 'ch' ], true)) {
+                echo '<a href="https://datingnebenan.de/dating-' . $province['img'] . '" class="btn btn-primary btn-tips" target="_blank">Dating Nebenan ' . $province['name'] . '</a>';
             }
-            $shemaleSlug = ($country === 'be') ? 'shemales-' : 'shemale-';
             ?>
             <a href="https://18date.net/sexdate-<?php echo $province['img']; ?>" class="btn btn-primary btn-tips" target="_blank">18+ Sexdate <?php echo $province['name']; ?></a>
             <a href="https://sex55.net/sexdate-<?php echo $province['img']; ?>" class="btn btn-primary btn-tips" target="_blank">55+ Sexdate <?php echo $province['name']; ?></a>
